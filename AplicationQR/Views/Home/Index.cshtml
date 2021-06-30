@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <form method="post" asp-controller="demo" asp-action="generate">
+        <input type="text" name="qrtext" value="@ViewBag.qrtext" />
+        <input type="submit" value="Generate" />
+    </form>
+    @if (@ViewBag.qrtext != null)
+    {
+        <qrcode content=@ViewBag.qrtext width="200" height="200" />
+        <barcode content=@ViewBag.qrtext width="200" height="50" />
+
+    }
+</body>
+</html>
+
+
