@@ -16,6 +16,10 @@
         <barcode content=@ViewBag.qrtext width="200" height="50" />
 
     }
+
+    @if(@ViewBag.ocrData !=null){
+        <p>@ViewBag.ocrData</p>
+    }
 </body>
 </html>
 

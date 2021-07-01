@@ -1,0 +1,61 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+<h3>Document page</h3>
+
+<form asp-controller="Document" asp-action="Search">
+    <p>
+        Title: <input type="text" name="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+<a class="nav-link text-dark" asp-area="" asp-controller="Document" asp-action="Create">New</a>
+
+@if (@ViewBag.ListDocument != null)
+{
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>File name</th>
+            <th>File content</th>
+            <th>Date created</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var document in ViewBag.ListDocument)
+        {
+        <tr>
+            <td>@document.id</td>
+
+            <td>@document.fileName</td>
+            <td>@document.fileContent</td>
+            <td>@document.dateCreated</td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+
+}

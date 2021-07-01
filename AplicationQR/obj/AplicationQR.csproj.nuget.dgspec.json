@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a760876\\source\\repos\\AppicationFile\\AplicationQR\\AplicationQR.csproj": {}
+    "C:\\Users\\a760876\\source\\repos\\AppicationFile\\GenerateQrCode\\AplicationQR\\AplicationQR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a760876\\source\\repos\\AppicationFile\\AplicationQR\\AplicationQR.csproj": {
+    "C:\\Users\\a760876\\source\\repos\\AppicationFile\\GenerateQrCode\\AplicationQR\\AplicationQR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a760876\\source\\repos\\AppicationFile\\AplicationQR\\AplicationQR.csproj",
+        "projectUniqueName": "C:\\Users\\a760876\\source\\repos\\AppicationFile\\GenerateQrCode\\AplicationQR\\AplicationQR.csproj",
         "projectName": "AplicationQR",
-        "projectPath": "C:\\Users\\a760876\\source\\repos\\AppicationFile\\AplicationQR\\AplicationQR.csproj",
+        "projectPath": "C:\\Users\\a760876\\source\\repos\\AppicationFile\\GenerateQrCode\\AplicationQR\\AplicationQR.csproj",
         "packagesPath": "C:\\Users\\a760876\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a760876\\source\\repos\\AppicationFile\\AplicationQR\\obj\\",
+        "outputPath": "C:\\Users\\a760876\\source\\repos\\AppicationFile\\GenerateQrCode\\AplicationQR\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,6 +43,26 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Elasticsearch.Net": {
+              "target": "Package",
+              "version": "[7.13.1, )"
+            },
+            "IronOcr": {
+              "target": "Package",
+              "version": "[2021.6.0, )"
+            },
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.AspNet.WebPages": {
+              "target": "Package",
+              "version": "[3.2.7, )"
+            },
+            "NEST": {
+              "target": "Package",
+              "version": "[7.13.1, )"
+            },
             "System.Drawing.Common": {
               "target": "Package",
               "version": "[5.0.2, )"
