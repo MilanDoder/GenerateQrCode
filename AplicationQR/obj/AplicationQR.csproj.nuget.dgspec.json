@@ -43,9 +43,21 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Aspose.PDF": {
+              "target": "Package",
+              "version": "[21.6.0, )"
+            },
+            "Aspose.Words": {
+              "target": "Package",
+              "version": "[21.6.0, )"
+            },
             "Elasticsearch.Net": {
               "target": "Package",
               "version": "[7.13.1, )"
+            },
+            "GemBox.Document": {
+              "target": "Package",
+              "version": "[33.0.1249, )"
             },
             "IronOcr": {
               "target": "Package",
@@ -62,6 +74,22 @@
             "NEST": {
               "target": "Package",
               "version": "[7.13.1, )"
+            },
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.4.1, )"
+            },
+            "SkiaSharp.QrCode": {
+              "target": "Package",
+              "version": "[0.4.1, )"
+            },
+            "Spire.Barcode": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            },
+            "Syncfusion.Pdf.Net.Core": {
+              "target": "Package",
+              "version": "[19.2.0.44, )"
             },
             "System.Drawing.Common": {
               "target": "Package",

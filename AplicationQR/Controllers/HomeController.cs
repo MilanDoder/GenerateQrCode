@@ -1,4 +1,5 @@
-﻿using AplicationQR.Models;
+﻿using AplicationQR.Elasticsearch;
+using AplicationQR.Models;
 using IronOcr;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -38,6 +39,13 @@ namespace AplicationQR.Controllers
         public IActionResult Generate(string qrtext)
         {
             ViewBag.qrtext = qrtext;
+            return View("Index");
+        }
+
+        [Route("file")]
+        public IActionResult File(string contentFile)
+        {
+            FileCreator.createPdfFileMethod(contentFile);
             return View("Index");
         }
 

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+﻿using Aspose.Words;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using System;
 using System.Collections.Generic;
@@ -53,8 +54,8 @@ namespace AplicationQR.Tags
                     output.Attributes.Add("width", width);
                     output.Attributes.Add("height", height);
                     output.Attributes.Add("src", String.Format("data:image/png;base64,{0}", Convert.ToBase64String(memoryStream.ToArray())));
-
-
+                                        
+                    string a;
                 }
             }
 

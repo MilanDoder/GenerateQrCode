@@ -10,6 +10,11 @@
         <input type="text" name="qrtext" value="@ViewBag.qrtext" />
         <input type="submit" value="Generate" />
     </form>
+    <label>Generate File:</label>
+    <form method="post" asp-controller="demo" asp-action="file">
+        <input type="text" name="contentFile"/>
+        <input type="submit" value="Generate" />
+    </form>
     @if (@ViewBag.qrtext != null)
     {
         <qrcode content=@ViewBag.qrtext width="200" height="200" />
@@ -17,9 +22,11 @@
 
     }
 
-    @if(@ViewBag.ocrData !=null){
+    @if (@ViewBag.ocrData != null)
+    {
         <p>@ViewBag.ocrData</p>
     }
+
 </body>
 </html>
 

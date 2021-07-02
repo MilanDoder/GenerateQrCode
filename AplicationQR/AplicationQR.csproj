@@ -5,11 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Aspose.PDF" Version="21.6.0" />
+    <PackageReference Include="Aspose.Words" Version="21.6.0" />
     <PackageReference Include="Elasticsearch.Net" Version="7.13.1" />
+    <PackageReference Include="GemBox.Document" Version="33.0.1249" />
     <PackageReference Include="IronOcr" Version="2021.6.0" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
     <PackageReference Include="Microsoft.AspNet.WebPages" Version="3.2.7" />
     <PackageReference Include="NEST" Version="7.13.1" />
+    <PackageReference Include="QRCoder" Version="1.4.1" />
+    <PackageReference Include="SkiaSharp.QrCode" Version="0.4.1" />
+    <PackageReference Include="Spire.Barcode" Version="5.6.0" />
+    <PackageReference Include="Syncfusion.Pdf.Net.Core" Version="19.2.0.44" />
     <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
     <PackageReference Include="ZXing.Net" Version="0.16.6" />
     <PackageReference Include="ZXing.Net.Bindings.ZKWeb.System.Drawing" Version="0.16.5" />
